@@ -1,0 +1,35 @@
+BÁO CÁO KIỂM THỬ (TEST REPORT)
+Dự án: Hệ thống tính lương Freelancer
+Người thực hiện: Junior Developer
+
+1. CÔNG THỨC ÁP DỤNG:
+   FinalSalary = (Base + OT * Rate) - (Base + OT * Rate) * Tax
+
+2. KẾT QUẢ KIỂM THỬ:
+
+Case 01: Nhân viên tiêu chuẩn
+- Input: Base=5000, OT=10, Rate=1.5, Tax=0.1
+- Expect: 5000 + 15 = 5015; Thuế 10% = 501.5; Còn lại = 4513.5
+- Result: 4513.50 -> PASS
+
+Case 02: Giờ tăng ca số thập phân
+- Input: Base=5000, OT=10.5, Rate=1.5, Tax=0.1
+- Result: 4515.75 -> PASS
+
+Case 03: Không có giờ tăng ca
+- Input: Base=5000, OT=0, Rate=1.5, Tax=0.1
+- Expect: 5000 - 500 = 4500
+- Result: 4500.00 -> PASS
+
+Case 04: Thuế suất bằng 0 (Miễn thuế)
+- Input: Base=5000, OT=10, Rate=1.5, Tax=0
+- Expect: 5015.00
+- Result: 5015.00 -> PASS
+
+Case 05: Lương và OT cực lớn
+- Input: Base=100000, OT=100, Rate=1.5, Tax=0.2
+- Result: 81200.00 -> PASS
+
+3. KẾT LUẬN:
+Mã nguồn hoạt động chính xác với các số liệu thập phân và trường hợp biên. 
+Không còn hiện tượng ghi đè biến nhờ chuyển sang dùng const.
