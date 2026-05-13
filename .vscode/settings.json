@@ -1,0 +1,11 @@
+{
+  "editor.quickSuggestions": false,
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.inlineSuggest.enabled": false,
+  "editor.parameterHints.enabled": true,
+  "emmet.triggerExpansionOnTab": true,
+  "[html]": {
+    "editor.quickSuggestions": true,
+    "editor.suggestOnTriggerCharacters": true
+  }
+}
