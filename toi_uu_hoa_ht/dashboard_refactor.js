@@ -15,6 +15,5 @@ function renderDashboard(user) {
     console.log(`Màu trạng thái: ${statusColor}`);
 }
 
-showWelcome({ name: "Hoàng", isVip: true }); // Chào mừng Hoàng *
-showWelcome({});                             // Chào mừng Khách 
-renderDashboard({ role: "admin", status: "online" }); // Mở bảng Quản trị, Màu xanh
+showWelcome({ name: "Hoàng", isVip: true }); 
+renderDashboard({ role: "admin", status: "online" }); 
